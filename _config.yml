@@ -1,9 +1,9 @@
 # Site settings
-author: Brad Alexander
+author: B.Alexander
 title: #{clever_name}
 header-img: img/home-bg.png
 email: brad.alexander913@gmail.com
-copyright_name: Brad Alexander
+copyright_name: B.Alexander
 description: > # this means to ignore newlines until "baseurl:"
    - a Blog
 baseurl: "" # the subpath of your site, e.g. /blog
