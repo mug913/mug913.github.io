@@ -1,0 +1,18 @@
+---
+layout: post
+title:      "GitN00B      "
+date:       2020-05-16 22:17:08 +0000
+permalink:  gitn00b
+---
+
+So during work on my latest project in Rails, I decided to use OmniAuth authorization via a Google account in order to familiarize myself with its implementation and get a better idea of its uses. The addition of it into my project had some hiccups but by following along with some handy guides written by kind folks with more experience, with a final push of my repository to Github I ended the night’s coding session in success. Then during the next day I checked my email and was reminded just how much I still had to learn with this message:
+
+GitGuardian has detected an API key from Google exposed on your GitHub account.
+Details
+- Secret type: Google API Key
+
+Cue sad trumpets. It seems in my rush to get this functionality added I had committed that newbie sin of hard-coding my key into my source code. Thankfully I am not in scarce company when it comes to this error being made and Github already has a handy step by step guide for removing commits which may contain sensitive data from you repositories. A few fumbles later, my past repository postings had been cleansed and my keys were safe and stored in a file on my ignore list.
+
+This did get me curious though, how common a sin was this? So I gave a quick search on github for one of the fields I had misplaced and almost immediately found many more keys then I had expected. Looking around a bit further, I was able to find a research paper (https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04B-3_Meli_paper.pdf) where a team performed a detailed analysis on their own data mining attempts and found a stunning amount of secrets leaked on github, to the scale of thousands a day. 
+
+As opposed to feeling excused from this type of rookie stumble, this experience has only served to underline the importance of ensuring that any sensitive data has its security thought of foremost when implementing any new code functionality.
